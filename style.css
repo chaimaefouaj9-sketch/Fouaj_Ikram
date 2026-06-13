@@ -1,0 +1,70 @@
+/* 1) Image de fond répétée horizontalement et verticalement */
+body {
+  background-image: url("fond.jpg");
+  background-repeat: repeat;
+  font-family: 'Verdana', sans-serif;
+}
+
+/* 2) Police et effets */
+h1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 28px;
+  text-shadow: 2px 2px 5px gray;
+  text-align: center;
+}
+
+/* 3) Division occupant 25% de la hauteur */
+.division {
+  height: 25vh;
+  text-align: left;
+  border: 2px light yellow;
+  background-color: light orange;
+  padding: 10px;
+}
+
+/* 4) Bordures et fond d’écran */
+.division {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #dfe9f3, #ffffff);
+}
+
+/* 5) Classe spéciale */
+.special {
+  color: ;
+  font-weight: bold;
+  background-color: #D3EADA;
+  border: 2px dashed #F9C0Af;
+  padding: 5px;
+}
+
+/* 6) Deux types de divisions */
+#ele1 {
+  background-color: #ECD2E0;
+  border: 3px light pink;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#ele2 {
+  background-color: #ffcdd2;
+  border: 3px light purple;
+  text-align: right;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* 7) Positionnement absolu */
+.positionnee {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background-color: light green;
+  padding: 10px;
+  border: 2px light blue;
+}
+
+/* 8) Uniformisation du style global */
+* {
+  box-sizing: border-box;
+}

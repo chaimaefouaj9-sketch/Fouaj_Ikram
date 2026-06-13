@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Préparez vos vacances d'été</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 600px;
+      margin: auto;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .checkbox-group, .radio-group {
+      margin-top: 10px;
+    }
+    .checkbox-group label, .radio-group label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+    textarea {
+      height: 80px;
+    }
+    .submit {
+      text-align: center;
+      margin-top: 20px;
+    }
+    input[type="submit"] {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Préparez vos vacances d'été</h2>
+  <form>
+    <label for="nom">Votre Nom *</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Votre adresse E-Mail *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="continent">Choisissez un Continent</label>
+    <select id="continent" name="continent">
+      <option value="">-- Sélectionnez --</option>
+      <option>Afrique</option>
+      <option>Europe</option>
+      <option>Asie</option>
+      <option>Amérique</option>
+      <option>Océanie</option>
+    </select>
+
+    <label>Conditions spéciales pour groupe (choisir deux options maximum)</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="conditions" value="seul"> Seul</label>
+      <label><input type="checkbox" name="conditions" value="couple"> Couple</label>
+      <label><input type="checkbox" name="conditions" value="enfants"> Enfants</label>
+      <label><input type="checkbox" name="conditions" value="groupe"> Groupe</label>
+    </div>
+
+    <label>Souhaitez-vous être logé en :</label>
+    <div class="radio-group">
+      <label><input type="radio" name="logement" value="hotel"> Hôtel</label>
+      <label><input type="radio" name="logement" value="chalet"> Chalet</label>
+      <label><input type="radio" name="logement" value="camping"> Camping</label>
+      <label><input type="radio" name="logement" value="villa"> Villa</label>
+    </div>
+
+    <label for="demande">Veuillez noter vos demandes complémentaires ci-après :</label>
+    <textarea id="demande" name="demande"></textarea>
+
+    <label>Êtes-vous déjà client de notre Agence :</label>
+    <div class="radio-group">
+      <label><input type="radio" name="client" value="oui"> Oui</label>
+      <label><input type="radio" name="client" value="non"> Non</label>
+    </div>
+
+    <p>La documentation vous est envoyée par retour. Merci de votre visite.</p>
+
+    <div class="submit">
+      <input type="submit" value="Envoyer">
+    </div>
+  </form>
+</body>
+</html>
